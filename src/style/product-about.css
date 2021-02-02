@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.col-md-6 img{
+    width: 100%;
+    cursor:zoom-in;
+}
+.col-md-6 a{
+    text-decoration:none !important;
+}

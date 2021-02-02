@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+.menu{
+    color: #ffffff !important;
+    text-decoration: none !important;
+    transition: .5s all linear;
+    font-size: 20px;
+}
+.menu:hover{
+    font-size: 22px;
+}
