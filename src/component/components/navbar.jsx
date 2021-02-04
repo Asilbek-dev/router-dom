@@ -1,10 +1,23 @@
+import { Link } from "react-router-dom";
+
+const menus = [
+    {label: "Products", path: "/products"},
+    {label: "About", path: "/about"},
+    {label: "Admin", path: "/admin"},
+]
 const Navbar = () => {
-    return ( <nav className="navbar navbar-light bg-light">
-        <a href="#1" className="navbar-brand">LOGO</a>
-        <ul className="navbar-nav">
-            <li className="navbar item"><a href="#1" className="navbar-link"></a></li>
+  return (
+    <nav className="navbar navbar-light bg-light">
+        <Link to="/home" className="navbar-brand">
+        LOGO
+        </Link>
+        <ul className="nav">
+            {menus.map(({label,path}) =>(<li className="nav-item">
+                <Link to={path} className="nav-link">{label}</Link>
+            </li>))}
         </ul>
-    </nav> );
-}
- 
+    </nav>
+    );
+};
+
 export default Navbar;

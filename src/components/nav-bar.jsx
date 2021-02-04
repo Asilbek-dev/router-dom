@@ -14,9 +14,6 @@ class NavBar extends Component {
                         <Link className = "menu" to = "/products">Products</Link>
                     </li>
                     <li className="nav-link ">
-                        <Link className = "menu" to = "/login">Login</Link>
-                    </li>
-                    <li className="nav-link ">
                         <Link className = "menu" to = "/sign-up">Sign up</Link>
                     </li>
                 </ul>
